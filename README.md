@@ -14,7 +14,7 @@ The following steps are executed in the `paleo-coupling.r` script to link the hi
 
 - **Step 4:** The historical (1950–2003) detrended temperature and precipitation data for the water year of the analog historical observed flow was then copied into the historical reconstructed years.
 
-![Figure 1 - Paleo Bootstrapping Process](./paleo-bootstrapping-process.png)
+![Figure 1 - Paleo Bootstrapping Process](docs/paleo-bootstrapping-process.png)
 
 # References
 Meko, David M., Connie A. Woodhouse, and Ramzi Touchan. 2014. “Klamath / San Joaquin / Sacramento Hydroclimatic Reconstructions from Tree Rings.”
