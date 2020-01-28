@@ -6,34 +6,15 @@ The Sacramento 4-river annual streamflow is the aggregate annual water-year (Oct
 ## Processing Steps
 The following steps are executed in the `paleo-coupling.r` script to link the historical 50-year daily temperature and precipitation record to the 1,100-year paleodendrochronological record:
 
-- **Step 1:** Prior to using the historical observed temperature data, it was necessary
-to remove the linear warming trend in the data. Temperature detrending was
-achieved by applying a linear trend to the data so that the detrended temperature
-time series had a trend line of slope zero and an average value equal to the
-average temperature from 1981 through 2010. This procedure was applied to
-each grid cell across the CVS watershed. The detrended historical temperature
-allows reference to current and recent historical conditions when developing the
-stress test as opposed to a more abstract reference to mid-20th-century
-temperatures at the mean of the historical time series. Furthermore, detrending
-was necessary to ensure the same average temperature reference is maintained
-across the 1,100-year coupled sequence. The observed historical precipitation
-data showed no trend, thus required no detrending.
+- **Step 1:** Prior to using the historical observed temperature data, it was necessary to remove the linear warming trend in the data. Temperature detrending was achieved by applying a linear trend to the data so that the detrended temperature time series had a trend line of slope zero and an average value equal to the average temperature from 1981 through 2010. This procedure was applied to each grid cell across the CVS watershed. The detrended historical temperature allows reference to current and recent historical conditions when developing the stress test as opposed to a more abstract reference to mid-20th-century temperatures at the mean of the historical time series. Furthermore, detrending was necessary to ensure the same average temperature reference is maintained across the 1,100-year coupled sequence. The observed historical precipitation data showed no trend, thus required no detrending.
 
-- **Step 2:** Using the historical (1950–2003) detrended temperature and precipitation
-data as input, the Sacramento Soil Moisture Accounting distributed hydrologic
-model (SAC-SMA-DS) was used to simulate streamflows in the Sacramento,
-Feather, Yuba, and American rivers of the Sacramento basin to generate the
-Sacramento 4-river annual streamflow.
+- **Step 2:** Using the historical (1950–2003) detrended temperature and precipitation data as input, the Sacramento Soil Moisture Accounting distributed hydrologic model (SAC-SMA-DS) was used to simulate streamflows in the Sacramento, Feather, Yuba, and American rivers of the Sacramento basin to generate the Sacramento 4-river annual streamflow.
 
-- **Step 3:** For each paleo-drendrochronology reconstructed Sacramento 4-river
-annual streamflow from 900 through 1949, the closest historical observed (1950–
-2003) analog flow was associated with it.
+- **Step 3:** For each paleo-drendrochronology reconstructed Sacramento 4-river annual streamflow from 900 through 1949, the closest historical observed (1950–2003) analog flow was associated with it.
 
-- **Step 4:** The historical (1950–2003) detrended temperature and precipitation data
-for the water year of the analog historical observed flow was then copied into the
-historical reconstructed years.
+- **Step 4:** The historical (1950–2003) detrended temperature and precipitation data for the water year of the analog historical observed flow was then copied into the historical reconstructed years.
 
-![Figure 1 - Paleo Bootstrapping Process](paleo-bootstrapping-process.png)
+![Figure 1 - Paleo Bootstrapping Process](./paleo-bootstrapping-process.png)
 
 # References
 Meko, David M., Connie A. Woodhouse, and Ramzi Touchan. 2014. “Klamath / San Joaquin / Sacramento Hydroclimatic Reconstructions from Tree Rings.”
